@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASCII Art Gallery</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #6b6b6b;
+    --card: #fafafa; --border: #e3e3e3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16161a; --fg: #ececec; --muted: #9a9a9a;
+      --card: #1e1e24; --border: #2e2e36;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.5rem 1.5rem; background: var(--bg); color: var(--fg);
+    font: 15px/1.5 ui-sans-serif, system-ui, -apple-system, sans-serif;
+  }
+  header { max-width: 1200px; margin: 0 auto 2rem; }
+  h1 { margin: 0 0 .25rem; font-size: 1.6rem; letter-spacing: -.02em; }
+  .sub { color: var(--muted); font-size: .875rem; }
+  .grid {
+    max-width: 1200px; margin: 0 auto; display: grid; gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+  .card {
+    margin: 0; background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; overflow: hidden;
+  }
+  .card img {
+    display: block; width: 100%; height: 260px; object-fit: contain;
+    background: #fff; padding: .5rem;
+  }
+  figcaption {
+    padding: .75rem .9rem; display: flex; flex-direction: column; gap: .2rem;
+    border-top: 1px solid var(--border);
+  }
+  figcaption strong { font-size: .9rem; word-break: break-all; }
+  .meta { color: var(--muted); font-size: .78rem; }
+  a { color: inherit; }
+  .meta a { text-decoration: underline; }
+  .empty { color: var(--muted); max-width: 1200px; margin: 0 auto; }
+</style>
+</head>
+<body>
+<header>
+  <h1>ASCII Art Gallery</h1>
+  <p class="sub">2 piece(s) &middot; updated 2026-08-01 16:34</p>
+</header>
+<div class="grid">
+    <figure class="card">
+      <a href="output/frieren-ascii.png" target="_blank">
+        <img src="output/frieren-ascii.png" alt="ASCII art from frieren.jpg" loading="lazy">
+      </a>
+      <figcaption>
+        <strong>frieren.jpg</strong>
+        <span class="meta">250 cols &middot; 2790x3912 &middot; 2026-08-01 16:34</span>
+        <span class="meta"><a href="output/frieren-ascii.png" download>image</a> &middot; <a href="output/frieren-ascii.txt" download>.txt</a></span>
+      </figcaption>
+    </figure>
+    <figure class="card">
+      <a href="output/space-man-ascii.png" target="_blank">
+        <img src="output/space-man-ascii.png" alt="ASCII art from space-man.jpg" loading="lazy">
+      </a>
+      <figcaption>
+        <strong>space-man.jpg</strong>
+        <span class="meta">200 cols &middot; 2040x3422 &middot; 2026-08-01 16:31</span>
+        <span class="meta"><a href="output/space-man-ascii.png" download>image</a> &middot; <a href="output/space-man-ascii.txt" download>.txt</a></span>
+      </figcaption>
+    </figure>
+</div>
+</body>
+</html>

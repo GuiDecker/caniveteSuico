@@ -1,0 +1,18 @@
+[
+  {
+    "source": "frieren.jpg",
+    "image": "output/frieren-ascii.png",
+    "text": "output/frieren-ascii.txt",
+    "width": 250,
+    "size": "2790x3912",
+    "created": "2026-08-01 16:34"
+  },
+  {
+    "source": "space-man.jpg",
+    "image": "output/space-man-ascii.png",
+    "text": "output/space-man-ascii.txt",
+    "width": 200,
+    "size": "2040x3422",
+    "created": "2026-08-01 16:31"
+  }
+]

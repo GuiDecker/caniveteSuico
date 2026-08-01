@@ -1,0 +1,18 @@
+/.claude
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Downloads incompletos
+*.crdownload
+
+# Artes geradas. As que ja estao versionadas continuam no repo como amostra;
+# estes padroes so impedem que novas subam sozinhas.
+ascii-converter/output/
+ascii-converter/gallery.html
+ascii-converter/gallery.json
